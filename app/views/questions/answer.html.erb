@@ -1,0 +1,15 @@
+<h1>Stupid Coaching</h1>
+<p class="alert alert-secondary"> <%= params[:question] %>
+<br><em> -You </em></p>
+<p class="alert alert-warning">
+<% if params[:question].to_s.ends_with?("?") %>
+  <strong><%="Silly question, get dressed and go to work!"%></strong>
+<% elsif params[:question] == 'I am going to work' %>
+  <strong><%="Great!"%></strong>
+<% else %>
+<strong><%= "I don't care, get dressed and go to work!" %></strong>
+<% end %>
+
+<br><em> -Your coach </em></p>
+<p></p>
+<%= link_to "Ask a new question", ask_path %>

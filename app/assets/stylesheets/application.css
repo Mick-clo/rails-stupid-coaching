@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+p {
+  border: rgb(39, 39, 39);
+}
